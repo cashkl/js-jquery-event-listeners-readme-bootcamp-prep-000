@@ -7,32 +7,38 @@ function getIt() {
 }
 
 function frameIt() {
-  $('img').append('class="tasty"');
+  $('img').on('load', function() {
+    $('img').addClass('tasty');
+  });
+
 }
 
 function pressIt() {
+  $(document).on('keydown',function(key) {
+  if(key.which == 71){
   alert("Hey you pressed the G");
+  }
+  });
+  
+
 }
 
 function submitIt() {
-  alert("Your form is going to be submitted now.")
+
+  $('form').on('submit',function() {
+    alert("Your form is going to be submitted now.")
+  });
+
+  
 }
 
 $(document).ready(function(){
 
 
-$('img').on('load', function() {
-  frameIt();
-});
-$(document).on('keydown',function(key) {
-if(key.which == 71){
-pressIt();
-}
-});
-$('form').on('submit',function() {
-  submitIt();
-})
-});
+
+
+
+
 
 
 
