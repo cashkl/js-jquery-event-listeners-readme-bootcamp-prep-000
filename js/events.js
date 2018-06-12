@@ -37,7 +37,7 @@ $(document).ready(function(){
 getIt();
 frameIt();
 pressIt();
-submitIT();
+submitIt();
 
 
 
