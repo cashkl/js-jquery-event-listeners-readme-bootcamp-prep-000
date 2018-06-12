@@ -1,6 +1,9 @@
 //define functions here
 function getIt() {
-  alert("Hey!");
+  $('p').on('click',function() {
+    alert("Hey!");
+  });
+
 }
 
 function frameIt() {
@@ -17,9 +20,6 @@ function submitIt() {
 
 $(document).ready(function(){
 
-$('p').addEventListener('click',function() {
-  getIt();
-});
 
 $('img').on('load', function() {
   frameIt();
