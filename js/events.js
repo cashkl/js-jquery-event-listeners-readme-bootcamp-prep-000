@@ -28,6 +28,7 @@ $(document).on('keydown',function(key) {
 if(key.which==71){
 pressIt();
 }
+});
 $('form').on('submit',function() {
   submitIt();
 })
