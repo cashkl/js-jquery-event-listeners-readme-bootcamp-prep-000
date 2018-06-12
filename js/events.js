@@ -25,7 +25,7 @@ $('img').on('load', function() {
   frameIt();
 });
 $(document).on('keydown',function(key) {
-if(key.which==71){
+if(key.which == 71){
 pressIt();
 }
 });
